@@ -1,0 +1,95 @@
+/* Margins of tabbrowser.
+    Left aligns with content
+    Top allows moving of window in full screen*/
+.tabbrowser-tabs {
+    margin-left: -4px;
+    margin-top: 1px;
+    margin-bottom: 0px;
+    max-height:23px;
+}
+
+/* Tabs, squared out and realigned amongst each other */
+.tabbrowser-tab {	
+    background: #EFEFEF !important;
+    margin-left: 1px !important;
+    margin-right: 0px !important;
+    border: 3px solid rgba(0,0,0,0.0) !important;
+    border-radius: 0px !important;
+}
+
+/* Highlight selected tab */
+.tabbrowser-tab[selected="true"]{
+    background: #FFFFFF !important;
+    min-width: 150px !important;
+}
+
+/* Centers tab-text and positions it vertically */
+.tab-text {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-left: 4px;
+}
+
+/* Hide favicon on tabs */
+.tabbrowser-tab .tab-icon-image {
+    display:none;
+}
+
+/* Hide close button on tabs */
+.tabs-closebutton-box, .tab-close-button {
+    display:none !important;
+}
+
+/* URL bar sizing */
+#urlbar-container {
+    margin-left: -2px;
+    max-width: 300px;
+    min-width: 200px;
+}
+
+#urlbar {
+    height: 25px !important;
+    padding-left: 2px !important;
+    border-radius: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+/* Hides url notification (Adobe Flash is *not* being blocked shows this) */
+#notification-popup-box {
+    display: none;
+}
+
+/* Hides icons in URL bar e.g. favourite star */
+#urlbar-icons {
+    display:none;
+}	
+
+/* Hide Site Identity box*/
+#identity-box{
+    display: none;
+}
+
+/* Color the appmenu button (Firefox button) */
+#appmenu-button  {
+    background: #600050 !important;
+    border: 1px solid rgba(0,0,0,0.5) !important;
+    border-radius: 0px !important;
+}
+
+/* Remove text from button, then replace */
+#appmenu-button .button-text { 
+    display:none;
+}
+
+#appmenu-button dropmarker:before { 
+    content: "(*´・ｖ・)";
+}
+
+/* Set a wallpaper for the about:newtab page*/
+@-moz-document url("about:newtab") {
+    #newtab-scrollbox{
+        /* background: url("file://") no-repeat; */
+        background-size: 100%;
+    }
+}
