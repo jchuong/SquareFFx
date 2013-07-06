@@ -1,4 +1,4 @@
-/* Margins of tabbrowser.
+﻿/* Margins of tabbrowser.
     Left aligns with content
     Top allows moving of window in full screen*/
 .tabbrowser-tabs {
@@ -39,6 +39,11 @@
 /* Hide close button on tabs */
 .tabs-closebutton-box, .tab-close-button {
     display:none !important;
+}
+
+/* Hide new tab button */
+.tabs-newtab-button {
+    display: none;
 }
 
 /* URL bar sizing */
@@ -84,6 +89,10 @@
 
 #appmenu-button dropmarker:before { 
     content: "(*´・ｖ・)";
+}
+
+#downloads-indicator[attention] > #downloads-indicator-anchor > #downloads-indicator-icon{
+    background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-inverted.png"), 0, 108, 18, 90) !important;         
 }
 
 /* Set a wallpaper for the about:newtab page*/
