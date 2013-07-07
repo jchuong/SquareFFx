@@ -1,24 +1,32 @@
 ﻿/* Margins of tabbrowser.
     Left aligns with content
-    Top allows moving of window in full screen*/
+    Top allows moving of window in full screen */
 .tabbrowser-tabs {
-    margin-left: -4px;
+    margin-left: -3px;
     margin-top: 1px;
     margin-bottom: 0px;
     max-height:23px;
 }
 
 /* Tabs, squared out and realigned amongst each other */
-.tabbrowser-tab {	
+.tabbrowser-tab:not([pinned]) {	
     background: #EFEFEF !important;
     margin-left: 1px !important;
     margin-right: 0px !important;
-    border: 3px solid rgba(0,0,0,0.0) !important;
+    border: 0px solid rgba(0,0,0,0.0) !important;
+    border-radius: 0px !important;
+}
+
+/* Fix pinned tabs */
+.tabbrowser-tab[pinned] {	
+    background: #EFEFEF !important;
+    border: 0px solid rgba(0,0,0,0.0) !important;
+    margin-right: 1px !important;
     border-radius: 0px !important;
 }
 
 /* Highlight selected tab */
-.tabbrowser-tab[selected="true"]{
+.tabbrowser-tab[selected]:not([pinned]){
     background: #FFFFFF !important;
     min-width: 150px !important;
 }
@@ -32,8 +40,8 @@
 }
 
 /* Hide favicon on tabs */
-.tabbrowser-tab .tab-icon-image {
-    display:none;
+.tabbrowser-tab:not([pinned]) .tab-icon-image {
+    display: none;
 }
 
 /* Hide close button on tabs */
