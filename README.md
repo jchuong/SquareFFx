@@ -18,7 +18,7 @@ Changed color of finished download button to stay white (tab bar, perhaps change
 3. Customize as you see fit, such as moving URL bar to the tab bar.
 
 ### Screenshots
-![Windowed mode](https://github.com/jchuong/SquareFFx/raw/master/window.png "Windowed")
+![Windowed mode](https://github.com/jchuong/SquareFFx/raw/master/windowed.png "Windowed")
 ![Maximized](https://github.com/jchuong/SquareFFx/raw/master/max.png "Maximized")
 
 [1]: https://addons.mozilla.org/en-US/firefox/addon/stylish/
