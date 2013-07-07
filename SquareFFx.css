@@ -9,7 +9,7 @@
 }
 
 /* Tabs, squared out and realigned amongst each other */
-.tabbrowser-tab:not([pinned]) {	
+.tabbrowser-tab:not([pinned]) {
     background: #EFEFEF !important;
     margin-left: 1px !important;
     margin-right: 0px !important;
@@ -18,7 +18,7 @@
 }
 
 /* Fix pinned tabs */
-.tabbrowser-tab[pinned] {	
+.tabbrowser-tab[pinned] {
     background: #EFEFEF !important;
     border: 0px solid rgba(0,0,0,0.0) !important;
     margin-right: 1px !important;

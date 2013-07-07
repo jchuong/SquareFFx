@@ -5,6 +5,9 @@ A simple Stylish script that makes your Firefox look nicer, in my opinion.
 
 Changelog
 ---------
+#### 1.2
+(Mostly) fixed pinned tab behaviour.
+
 #### 1.1
 Added hiding new tab button via CSS.
 Changed color of finished download button to stay white (tab bar, perhaps change this to be more general)
